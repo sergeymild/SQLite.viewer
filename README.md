@@ -42,6 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
+`After, go to browser and open link that will be shown at Xcode console.`
+
 
 ## Installation
 
@@ -61,8 +63,6 @@ source 'https://github.com/CocoaPods/Specs.git'
   pod 'SQLite.viewer', git: "https://github.com/sergeymild/SQLite.viewer", tag: '3.0.2', configurations: ['Debug']
 end
 ```
-
-After, go to browser and open link that will be shown at Xcode console.
 
 Then, run the following command:
 
