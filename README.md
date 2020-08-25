@@ -58,7 +58,7 @@ To integrate SQLite.viewer into your Xcode project using CocoaPods, specify it i
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
   target '<Your Target Name>' do
-  pod 'SQLite.viewer', git: "https://github.com/sergeymild/SQLite.viewer", configurations: ['Debug']
+  pod 'SQLite.viewer', git: "https://github.com/sergeymild/SQLite.viewer", tag: '3.0.2', configurations: ['Debug']
 end
 ```
 
