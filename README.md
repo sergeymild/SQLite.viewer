@@ -62,6 +62,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 end
 ```
 
+After, go to browser and open link that will be shown at Xcode console.
+
 Then, run the following command:
 
 ```bash
