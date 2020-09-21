@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'SQLite.viewer'
-    s.version          = '3.0.3'
+    s.version          = '3.0.5'
     s.summary          = 'An elegant library for debugging sqlite databases in iOS applications'
     s.homepage         = 'https://github.com/sergeymild/SQLite.viewer'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
     s.resource_bundles = { 'com.sergeymild.sqlite-viewer.assets' => ['Sources/**/*.{js,css,ico,html}'] }
 
     s.dependency 'SQift', '~> 4.0'
-    s.dependency 'Swifter'
+    s.dependency 'Swifter', '~> 1.5.0-rc.1'
 end
