@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'SQLite.viewer'
-    s.version          = '3.0.5'
+    s.version          = '3.0.6'
     s.summary          = 'An elegant library for debugging sqlite databases in iOS applications'
     s.homepage         = 'https://github.com/sergeymild/SQLite.viewer'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }

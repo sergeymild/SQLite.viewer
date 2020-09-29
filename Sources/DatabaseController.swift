@@ -57,11 +57,10 @@ class DatabaseController {
                 info["__id"] = UUID().uuidString
                 infos.append(info)
             }
-            let count: Int = (try! db.query("SELECT COUNT(*) FROM '\(tableName)'"))?.value(at: 0) ?? 0
             tablesData.append([
                 "__id": UUID().uuidString,
                 "tableName": tableName,
-                "count": count,
+                "count": 0,
                 "columns": infos
             ])
         }
@@ -85,7 +84,9 @@ class DatabaseController {
         if let offset = offset { query += " OFFSET \(offset)" }
 
         var result = try selectQuery(db: db, query: query)
+        let count: Int = (try! db.query("SELECT COUNT(*) FROM '\(table)'"))?.value(at: 0) ?? 0
         result["__id"] = UUID().uuidString
+        result["count"] = count
         return result
     }
     
